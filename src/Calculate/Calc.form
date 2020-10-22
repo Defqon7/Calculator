@@ -24,7 +24,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="37" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
@@ -33,14 +33,14 @@
                           <Component id="btn5" min="-2" pref="45" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btn6" min="-2" pref="45" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnMult" min="-2" pref="45" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnLn" min="-2" pref="45" max="-2" attributes="0"/>
+                          <Component id="btnLn" min="-2" pref="57" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnCos" min="-2" pref="59" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnClosedParenth" min="-2" pref="45" max="-2" attributes="0"/>
+                          <Component id="btnClosedParenth" min="-2" pref="58" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="btn1" min="-2" pref="45" max="-2" attributes="0"/>
@@ -48,14 +48,11 @@
                           <Component id="btn2" min="-2" pref="45" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btn3" min="-2" pref="45" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnSubt" min="-2" pref="45" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnLogTen" min="-2" pref="57" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnTan" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnC" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                          <Component id="btnTan" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="btn7" min="-2" pref="45" max="-2" attributes="0"/>
@@ -63,14 +60,14 @@
                           <Component id="btn8" min="-2" pref="45" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btn9" min="-2" pref="45" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnDiv" min="-2" pref="45" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnExp" min="-2" pref="45" max="-2" attributes="0"/>
+                          <Component id="btnExp" min="-2" pref="57" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnSin" min="-2" pref="57" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnOpenParenth" min="-2" pref="45" max="-2" attributes="0"/>
+                          <Component id="btnOpenParenth" max="32767" attributes="0"/>
                       </Group>
                       <Component id="textField" max="32767" attributes="0"/>
                   </Group>
@@ -78,12 +75,23 @@
                       <Component id="btn0" min="-2" pref="96" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnDec" min="-2" pref="45" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnAdd" min="-2" pref="45" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnCot" min="-2" pref="59" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnEquals" min="-2" pref="96" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnLogTen" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="btnCot" min="-2" pref="71" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnEquals" min="-2" pref="109" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                              <Component id="btnC" min="-2" pref="49" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
               </Group>
           </Group>
@@ -100,12 +108,12 @@
                       <Component id="btnOpenParenth" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                       <Component id="btnSin" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                       <Component id="btnExp" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
-                      <Component id="btnDiv" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" alignment="1" groupAlignment="3" attributes="0">
                       <Component id="btn7" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                       <Component id="btn8" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                       <Component id="btn9" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="btnDiv" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -351,6 +359,15 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="textField">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Verdana" size="28" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textFieldActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

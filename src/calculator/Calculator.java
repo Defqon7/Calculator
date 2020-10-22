@@ -6,13 +6,11 @@
 package calculator;
 
 import Calculate.Calc;
-import java.util.ArrayList;
-import java.util.Stack;
 import javax.swing.JFrame;
 
 /**
  *
- * @author Rochelle
+ * @author Braden Hanna
  */
 public class Calculator {
 
