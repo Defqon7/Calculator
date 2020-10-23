@@ -5,7 +5,6 @@
  */
 package calculator;
 
-import Calculate.Calc;
 import javax.swing.JFrame;
 
 /**

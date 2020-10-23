@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Calculate;
 
 import java.util.ArrayList;
@@ -10,7 +5,7 @@ import java.util.Stack;
 
 /**
  *
- * @author Rochelle
+ * @author Braden Hanna
  */
 public class Calc extends javax.swing.JFrame {
 
@@ -84,13 +79,14 @@ public class Calc extends javax.swing.JFrame {
                     case ")":
                         rightParenth++;
                         break;
-                    default: //do nothing
+                    default:
                         break;
                 }
 
             }
             if (leftParenth != rightParenth) {
                 throw new SyntaxErrorException("There is not an even number of parenthesis");
+
             }
 
             int parenthesis = 0;
@@ -125,16 +121,13 @@ public class Calc extends javax.swing.JFrame {
         if (operatorStack.empty() || op.equals("(")) {
             operatorStack.push(op);
         } else {
-            //peek the operator stack and
-            //let topOp be the top operator.
             String topOp = operatorStack.peek();
             if (precedence(op) > precedence(topOp)) {
                 if (!op.equals(")")) {
                     operatorStack.push(op);
                 }
             } else {
-                //Pop all stacked operators with equal
-                // or higher precedence than op.
+
                 while (!operatorStack.empty() && precedence(op) <= precedence(topOp)) {
                     double right = operandStack.pop();
                     double left = operandStack.pop();
@@ -158,7 +151,7 @@ public class Calc extends javax.swing.JFrame {
                         case "^":
                             operandStack.push(Math.pow(left, right));
                             break;
-                        default: //do nothing, but this should never happen
+                        default:
                             break;
                     }
 
@@ -175,8 +168,6 @@ public class Calc extends javax.swing.JFrame {
                     }
                 }
 
-                //assert: Operator stack is empty or
-                // current operator precedence > top of stack operator precedence.
             }
         }
     }
@@ -215,7 +206,7 @@ public class Calc extends javax.swing.JFrame {
                     case "^":
                         operandStack.push(Math.pow(left, right));
                         break;
-                    default: //do nothing, but this should never happen
+                    default:
                         break;
                 }
             }
@@ -670,7 +661,7 @@ public class Calc extends javax.swing.JFrame {
     private void btnCotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCotActionPerformed
         String num = textField.getText();
         double doubleNum = Double.parseDouble(num);
-        doubleNum = (Math.toRadians(Math.cos(doubleNum))/Math.toRadians(Math.sin(doubleNum)));
+        doubleNum = (Math.toRadians(Math.cos(doubleNum)) / Math.toRadians(Math.sin(doubleNum)));
         String strNum = String.valueOf(doubleNum);
         textField.setText(strNum);
     }//GEN-LAST:event_btnCotActionPerformed
