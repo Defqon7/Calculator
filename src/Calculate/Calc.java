@@ -9,12 +9,7 @@ import java.util.Stack;
  */
 public class Calc extends javax.swing.JFrame {
 
-    public static class SyntaxErrorException extends Exception {
 
-        SyntaxErrorException(String message) {
-            super(message);
-        }
-    }
 
     private static final Stack<Double> operandStack = new Stack<Double>();
     private static final Stack<String> operatorStack = new Stack<String>();
@@ -41,7 +36,9 @@ public class Calc extends javax.swing.JFrame {
                 } else if (c == '.') {
                     for (int j = 0; j < strBuild.length(); j++) {
                         if (strBuild.charAt(j) == '.') {
-                            throw new SyntaxErrorException("You can't have two decimals in a number");
+                            System.out.println("You can't have two decimals in a number!");
+                            System.out.println("Exiting...");
+                            System.exit(0);
                         } else if (j == strBuild.length() - 1) {
                             strBuild.append(c);
                             j = (strBuild.length() + 1);
@@ -51,7 +48,9 @@ public class Calc extends javax.swing.JFrame {
                         strBuild.append(c);
                     }
                     if (i == infix.length() - 1) {
-                        throw new SyntaxErrorException("You can't end your equation with a decimal");
+                        System.out.println("Cannot end with a decimal!");
+                        System.out.println("Exiting...");
+                        System.exit(0);
                     }
                 } else if (OPERATORS.indexOf(c) != -1) {
                     if (strBuild.length() != 0) {
@@ -62,7 +61,9 @@ public class Calc extends javax.swing.JFrame {
                     charList.add(strBuild.toString());
                     strBuild.delete(0, strBuild.length());
                 } else {
-                    throw new SyntaxErrorException("Make sure your input only contains numbers, operators, or parantheses");
+                    System.out.println("Make sure your input only contains numbers, operators, or parantheses!");
+                    System.out.println("Exiting...");
+                    System.exit(0);
                 }
             }
 
@@ -85,7 +86,9 @@ public class Calc extends javax.swing.JFrame {
 
             }
             if (leftParenth != rightParenth) {
-                throw new SyntaxErrorException("There is not an even number of parenthesis");
+                System.out.println("Not an even number of parenthesis!");
+                System.out.println("Exiting...");
+                System.exit(0);
 
             }
 
@@ -104,14 +107,18 @@ public class Calc extends javax.swing.JFrame {
                         break;
                 }
                 if (parenthesis < 0) {
-                    throw new SyntaxErrorException("Order of parenthesis is off");
+                    System.out.println("Order of parenthesis is wrong!");
+                    System.out.println("Exiting...");
+                    System.exit(0);
                 }
             }
             if (NONBRACES.contains(charList.get(charList.size() - 1))) {
-                throw new SyntaxErrorException("The input can't end in an operator");
+                System.out.println("The input can't end in an operator!");
+                System.out.println("Exiting...");
+                System.exit(0);
             }
             return charList;
-        } catch (SyntaxErrorException ex) {
+        } catch (Exception ex) {
             System.out.println(ex);
             return charList;
         }
